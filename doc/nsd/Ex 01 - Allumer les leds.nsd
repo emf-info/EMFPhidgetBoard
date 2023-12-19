@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;Allumer les leds&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Se connecter à l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;Connecté ?&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Afficher &#34;&#34;Nous sommes CONNECTÉS au EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<while text="&#34;tant que ( bouton7 n'est pas pressé )&#34;" comment="" color="ffffff">
+					<qWhile>
+						<alternative text="&#34;bouton4 pressé ?&#34;" comment="" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;allumer led0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led2&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led3&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led4&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led5&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;allumer led7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+							</qTrue>
+							<qFalse>
+								<instruction text="&#34;eteindre led0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led2&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led3&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led4&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led5&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<instruction text="&#34;eteindre led7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+							</qFalse>
+						</alternative>
+						<instruction text="&#34;Dormir 50[ms]&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+					</qWhile>
+				</while>
+				<instruction text="&#34;Se déconnecter de l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Afficher &#34;&#34;Nous sommes DÉCONNECTÉS de l'EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Afficher &#34;&#34;Erreur : pas connecté au EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

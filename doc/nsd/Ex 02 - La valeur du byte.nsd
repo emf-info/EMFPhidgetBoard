@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;La valeur du byte&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Se connecter à l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;Connecté ?&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;Afficher &#34;&#34;Nous sommes CONNECTÉS au EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<while text="&#34;tant que ( bouton7 n'est pas pressé )&#34;" comment="" color="ffffff">
+					<qWhile>
+						<instruction text="&#34;état de led0 = état de bouton0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led1 = état de bouton1&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led2 = état de bouton2&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led3 = état de bouton3&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led4 = état de bouton4&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led5 = état de bouton5&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led6 = état de bouton6&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;état de led7 = état de bouton7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;valeur = 2^0 x led0 +&#34;,&#34;              2^1 x led1 +&#34;,&#34;              2^2 x led2 +&#34;,&#34;              2^3 x led3 +&#34;,&#34;              2^4 x led4 +&#34;,&#34;              2^5 x led5 +&#34;,&#34;              2^6 x led6 +&#34;,&#34;              2^7 x led7&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Afficher &#34;&#34;La valeur correspondante du byte est : &#34;&#34; + valeur&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Dormir 50[ms]&#34;" comment="" color="ffffff" rotated="0"></instruction>
+					</qWhile>
+				</while>
+				<instruction text="&#34;Se déconnecter de l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Afficher &#34;&#34;Nous sommes DÉCONNECTÉS de l'EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34;Afficher &#34;&#34;Erreur : pas connecté au EMFPhidgetBoard !&#34;&#34;&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+	</children>
+</root>

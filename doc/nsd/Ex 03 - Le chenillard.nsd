@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;Le chenillard&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;VITESSE_INITIALE = 100&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;VITESSE_MIN = 500&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;VITESSE_MAX = 10&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;VITESSE_INCREMENT = 10&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;Se connecter à l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;Connecté ?&#34;" comment="" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;positionAllumee = 0&#34;" comment="" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;msDormir = VITESSE_INITIALE&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<while text="&#34;tant que ( bouton4 ET bouton7 ne sont pas pressés )&#34;" comment="" color="ffffff">
+					<qWhile>
+						<instruction text="&#34;Eteindre toutes les leds&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;Allumer la led N° positionAllumée&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;positionAllumée = ( positionAllumée + 1 ) % 8&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<instruction text="&#34;dormir durant msDormir millisecondes&#34;" comment="" color="ffffff" rotated="0"></instruction>
+						<alternative text="&#34;bouton6 pressé ?&#34;" comment="" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;msDormir = MAX( VITESSE_MAX, msDormir - VITESSE_INCREMENT )&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<while text="&#34;tant que bouton6 est pressé&#34;" comment="" color="ffffff">
+									<qWhile>
+										<instruction text="&#34;dormir durant msDormir millisecondes&#34;" comment="" color="ffffff" rotated="0"></instruction>
+									</qWhile>
+								</while>
+							</qTrue>
+							<qFalse>
+							</qFalse>
+						</alternative>
+						<alternative text="&#34;bouton5 pressé ?&#34;" comment="" color="ffffff">
+							<qTrue>
+								<instruction text="&#34;msDormir = MIN( VITESSE_MIN, msDormir + VITESSE_INCREMENT )&#34;" comment="" color="ffffff" rotated="0"></instruction>
+								<while text="&#34;tant que bouton5 est pressé&#34;" comment="" color="ffffff">
+									<qWhile>
+										<instruction text="&#34;dormir durant msDormir millisecondes&#34;" comment="" color="ffffff" rotated="0"></instruction>
+									</qWhile>
+								</while>
+							</qTrue>
+							<qFalse>
+							</qFalse>
+						</alternative>
+					</qWhile>
+				</while>
+				<instruction text="&#34;Se déconnecter de l'EMFPhidgetBoard&#34;" comment="" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+	</children>
+</root>
