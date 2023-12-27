@@ -1,5 +1,5 @@
 # EMFPhidgetBoard
-<img src="/doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
+<img src="doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
 
 ### Exemple pour avancés
 L'EMFPhidgetBoard peut également être utilisé dans un mode `"asynchrone"`. Dans ce mode très intéressant, plutôt que de devoir régulièrement vérifier soi-même si un bouton est pressé ou non, on sera spontanément appelé lorsque l'état de celui-ci change. Pour être plus clair, c'est un bout de code que l'on fourni qui sera appelé. On appelle ça `la programmation événementielle`.
@@ -23,7 +23,7 @@ De plus et durant tout ce laps de temps, de manière événementielle :
 
 
 #### Structogramme correspondant
-<img src="/doc/img/Ex 01 - Allumer les leds.png" width="640" alt="EMFPhidgetBoard"/>
+<img src="doc/img/Ex 01 - Allumer les leds.png" width="640" alt="EMFPhidgetBoard"/>
 
 #### Diagramme des classes UML
 On peut constater que la classe `Board` mets également à disposition les 8x capteurs phidget branchés, soit directement (via les attributs `capteur0` à `capteur7`) ou indirectement (via l'attribut tableau `capteurs`).

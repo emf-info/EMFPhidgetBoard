@@ -1,5 +1,5 @@
 # EMFPhidgetBoard
-<img src="/doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
+<img src="doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
 
 [Revenir à la consigne principale README.md](/README.md)
 
@@ -16,7 +16,7 @@ Vous lui répondrez à l’aide :
 - du bouton N°5 si l'ordinateur a deviné votre nombre !
 
 #### Structogramme correspondant
-<img src="/doc/img/Ex 04 - Deviner ton nombre.png" width="640" alt="EMFPhidgetBoard"/>
+<img src="doc/img/Ex 04 - Deviner ton nombre.png" width="640" alt="EMFPhidgetBoard"/>
 
 #### Diagramme des classes UML
 ```mermaid

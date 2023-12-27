@@ -7,7 +7,7 @@
 #### Consigne
 Votre programme doit allumer toutes les leds de l’EMFPhidgetBoard si le bouton 4 est pressé, toutes les éteindre toutes s’il n’est pas pressé et le programme devra quitter lorsqu’on pressera le bouton 7.
 #### Structogramme correspondant
-<img src="/doc/img/Ex 01 - Allumer les leds.png" width="640" alt="EMFPhidgetBoard"/>
+<img src="doc/img/Ex 01 - Allumer les leds.png" width="640" alt="EMFPhidgetBoard"/>
 
 #### Diagramme des classes UML
 ```mermaid

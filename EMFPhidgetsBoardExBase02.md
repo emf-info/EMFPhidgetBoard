@@ -1,5 +1,5 @@
 # EMFPhidgetBoard
-<img src="/doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
+<img src="doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
 
 [Revenir à la consigne principale README.md](/README.md)
 
@@ -13,7 +13,7 @@ Affichez le nombre décimal qui correspond à cette série de bits composant ce 
 
 Le bouton 7 doit permettre de quitter le programme à tout moment.
 #### Structogramme correspondant
-<img src="/doc/img/Ex 02 - La valeur du byte.png" width="640" alt="EMFPhidgetBoard"/>
+<img src="doc/img/Ex 02 - La valeur du byte.png" width="640" alt="EMFPhidgetBoard"/>
 
 #### Diagramme des classes UML
 ```mermaid

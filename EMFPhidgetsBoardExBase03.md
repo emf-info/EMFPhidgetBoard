@@ -1,10 +1,10 @@
 # EMFPhidgetBoard
-<img src="/doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
+<img src="doc/img/EMFPhidgetBoard.png" width="320" alt="EMFPhidgetBoard"/>  
 
 [Revenir à la consigne principale README.md](/README.md)
 
 ### Exemple 03 – Le chenillard
-<img src="/doc/img/chenillard.gif" height="160" alt="Exemple de chenillard"/>  
+<img src="doc/img/chenillard.gif" height="160" alt="Exemple de chenillard"/>  
 
 #### Consigne
 Votre programme doit réaliser un chenillard. En clair, tour à tour chacune des led va s’allumer, puis s’éteindre, puis c’est la suivante qui s’allume puis s’éteint, etc. Et lorsqu’on arrive à la dernière led on recommence avec la première. On aura ainsi une impression visuelle d'une chenille qui se déplace rapidement.
@@ -18,7 +18,7 @@ Une fois que votre programme fonctionnera, rajoutez la fonctionnalité suivante 
 **Question :** Que devrait-on changer pour que la chenille rebondisse aux extrêmités ?
 
 #### Structogramme correspondant
-<img src="/doc/img/Ex 03 - Le chenillard.png" width="640" alt="EMFPhidgetBoard"/>
+<img src="doc/img/Ex 03 - Le chenillard.png" width="640" alt="EMFPhidgetBoard"/>
 
 #### Diagramme des classes UML
 ```mermaid
