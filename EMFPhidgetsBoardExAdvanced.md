@@ -35,7 +35,7 @@ Et on retrouve ces 3 méthodes spéciales qui permettent de s'abonner aux évén
 
 ```mermaid
 classDiagram
-namespace EMFPhidgetsBoard {
+
 class Board {
    -Bouton[] boutons
    -Led[] leds
@@ -86,7 +86,7 @@ class Led {
    +getEtat() boolean
    +setEtat(nouvelEtat boolean) boolean
 }
-}
+
 Board o--> "1" Bouton : bouton0 à bouton7
 Board o--> "0..*" Bouton : boutons
 
@@ -96,11 +96,10 @@ Board o--> "0..*" Led : leds
 Board o--> "1" Capteur : capteur0 à capteur7
 Board o--> "0..*" Capteur : capteurs
 
-namespace app {
 class EMFPhidgetsBoardExAdvanced {
     +main(args String[]) void$
 }
-}
+
 EMFPhidgetsBoardExAdvanced ..> Board : utilise
 ```
 Et voici ci-dessous les 3 événements (interfaces) auxquels on peut s'abonner via ces 3 méthodes spéciales (`setDigitalInputChangesListener()`, `setDigitalOutputChangesListener()` et `setAnalogicSensorChangesListener()`).

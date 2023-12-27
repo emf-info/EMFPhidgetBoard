@@ -21,7 +21,7 @@ Le bouton 7 doit permettre de quitter le programme à tout moment.
 title: Diagramme des classes
 ---
 classDiagram
-namespace EMFPhidgetsBoard {
+
 class Board {
    -Bouton[] boutons
    -Led[] leds
@@ -56,18 +56,17 @@ class Led {
    +getEtat() boolean
    +setEtat(nouvelEtat boolean) boolean
 }
-}
+
 Board o--> "1" Bouton : bouton0 à bouton7
 Board o--> "0..*" Bouton : boutons
 
 Board o--> "1" Led : led0 à led7
 Board o--> "0..*" Led : leds
 
-namespace app {
 class EMFPhidgetsBoardExBase02 {
     +main(args String[]) void$
 }
-}
+
 EMFPhidgetsBoardExBase02 ..> Board : utilise
 ```
 Comme le montre le diagramme des classes ci-dessus, la classe `Board` est très simple et ne permet de faire que 3 choses :
