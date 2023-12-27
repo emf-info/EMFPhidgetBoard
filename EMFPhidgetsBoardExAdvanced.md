@@ -107,7 +107,7 @@ Et voici ci-dessous les 3 événements (interfaces) auxquels on peut s'abonner v
 Pour être notifié de ces événements, il va falloir implémenter les méthodes ci-dessous, visibles dans ces interfaces :  
 ```mermaid
 classDiagram
-namespace EMFPhidgetsBoard {
+
 class DigitallnputChanges {
     <<interface>>
    +inputChanged(int index, boolean state) void
@@ -120,7 +120,7 @@ class AnalogicSensorChanges {
     <<interface>>
    +valueChanged(int index, int value) void
 }
-}
+
 ```
 
 #### Code Java correspondant
